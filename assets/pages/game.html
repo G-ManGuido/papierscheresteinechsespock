@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../SASS/main.css">
+    <title>Schere Stein Papier Echse Spock</title>
+</head>
+
+<body>
+
+    <!-- <header>
+        <img src="assets/img/start-headline.png" alt="Schere Stein Papier Echse Spock">
+    </header> -->
+    <main>
+        <div class="rightBox">
+            <p>Wie viele Runden willst Du spielen?</p>
+            <div class="cls-round-select">
+                <div>
+                    <input type="radio" name="rounds" id="five" value="5" checked>
+                    <label for="five">5</label>
+                </div>
+                <div>
+                    <input type="radio" name="rounds" id="ten" value="10">
+                    <label for="ten">10</label>
+                </div>
+                <div>
+                    <input type="radio" name="rounds" id="25" value="25">
+                    <label for="fifteen">25</label>
+                </div>
+                <div>
+                    <input type="radio" name="rounds" id="50" value="50">
+                    <label for="twenty">50</label>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="game">
+            <div class="movesleft"></div>
+            <div class="score">
+                <div class="playerScore">
+                    <p>Spieler</p>
+                    <p class="p-count">0</p>
+                </div>
+                <div class="computerScore">
+                    <p>Computer</p>
+                    <p class="c-count">0</p>
+                </div>
+
+            </div>
+
+
+
+            <div class="result"><img src="../img/winStein.png" alt="win">vs<img src="../img/winStein.png" alt="win">
+            </div>
+
+            <div class="desk">
+                <div class="options">
+                    <button class="Schere"><img src="../img/btnschere.png" alt="Schere"></button>
+                    <button class="Stein"><img src="../img/btnStein.png" alt="Stein"></button>
+                    <button class="Papier"><img src="../img/btnPapier.png" alt="Papier"></button>
+                    <button class="Echse"><img src="../img/btnEchse.png" alt="Echse"></button>
+                    <button class="Spock"><img src="../img/btnSpock.png" alt="Spock"></button>
+                </div>
+            </div>
+
+            <button class="restart"></button>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/main.js"></script>
+    <script src="https://kit.fontawesome.com/8c93758a75.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

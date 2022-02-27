@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Colleged';
+    src: url(../fonts/Colleged.ttf);
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background: #868686;
+	color: #666;
+    background: url(../img/startPic.png) no-repeat center/cover;
+}
