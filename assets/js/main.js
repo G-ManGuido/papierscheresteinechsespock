@@ -15,8 +15,6 @@ numberOfRounds.forEach(radio => radio.addEventListener('change', () => {
         maxRounds = 50;
     }
 
-    // event.preventDefault();
-    // window.open("game.html", "_self");
 }));
 
 const game = () => {
@@ -83,60 +81,60 @@ const game = () => {
 
         console.log(player)
         if (player === computer) {
-            result.innerHTML = '<img src="../img/win' + player + '.png" alt="-"> :  <img src="../img/win' + computer + '.png" alt="-">';
+            result.innerHTML = '<img src="../img/win' + player + '.png" alt="-">   <img src="../img/win' + computer + '.png" alt="-">';
         }
         else if (player == 'Schere') {
             if (computer == 'Stein') {
-                result.innerHTML = '<img src="../img/lose' + player + '.png" alt="-"> :  <img src="../img/win' + computer + '.png" alt="-">';
+                result.innerHTML = '<img src="../img/lose' + player + '.png" alt="-">  <img src="../img/win' + computer + '.png" alt="-">';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
             } else {
-                result.innerHTML = '<img src="../img/win' + player + '.png" alt="-"> :  <img src="../img/lose' + computer + '.png" alt="-">';
+                result.innerHTML = '<img src="../img/win' + player + '.png" alt="-">  <img src="../img/lose' + computer + '.png" alt="-">';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }
         }
         else if (player == 'Stein') {
             if (computer == 'Papier') {
-                result.innerHTML = '<img src="../img/lose' + player + '.png" alt="-"> :  <img src="../img/win' + computer + '.png" alt="-">';
+                result.innerHTML = '<img src="../img/lose' + player + '.png" alt="-">   <img src="../img/win' + computer + '.png" alt="-">';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
 
             } else {
-                result.innerHTML = '<img src="../img/win' + player + '.png" alt="-"> :  <img src="../img/lose' + computer + '.png" alt="-">';
+                result.innerHTML = '<img src="../img/win' + player + '.png" alt="-">  <img src="../img/lose' + computer + '.png" alt="-">';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }
         }
         else if (player == 'Papier') {
             if (computer == 'Schere') {
-                result.innerHTML = '<img src="../img/lose' + player + '.png" alt="-"> :  <img src="../img/win' + computer + '.png" alt="-">';
+                result.innerHTML = '<img src="../img/lose' + player + '.png" alt="-">  <img src="../img/win' + computer + '.png" alt="-">';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
             } else {
-                result.innerHTML = '<img src="../img/win' + player + '.png" alt="-"> :  <img src="../img/lose' + computer + '.png" alt="-">';
+                result.innerHTML = '<img src="../img/win' + player + '.png" alt="-">  <img src="../img/lose' + computer + '.png" alt="-">';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }
         }
         else if (player == 'Echse') {
             if (computer == 'Stein') {
-                result.innerHTML = '<img src="../img/lose' + player + '.png" alt="-"> :  <img src="../img/win' + computer + '.png" alt="-">';
+                result.innerHTML = '<img src="../img/lose' + player + '.png" alt="-">   <img src="../img/win' + computer + '.png" alt="-">';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
             } else {
-                result.innerHTML = '<img src="../img/win' + player + '.png" alt="-"> :  <img src="../img/lose' + computer + '.png" alt="-">';
+                result.innerHTML = '<img src="../img/win' + player + '.png" alt="-">   <img src="../img/lose' + computer + '.png" alt="-">';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }
         }
         else if (player == 'Spock') {
             if (computer == 'Echse') {
-                result.innerHTML = '<img src="../img/lose' + player + '.png" alt="-"> :  <img src="../img/win' + computer + '.png" alt="-">';
+                result.innerHTML = '<img src="../img/lose' + player + '.png" alt="-">   <img src="../img/win' + computer + '.png" alt="-">';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
             } else {
-                result.innerHTML = '<img src="../img/win' + player + '.png" alt="-"> :  <img src="../img/lose' + computer + '.png" alt="-">';
+                result.innerHTML = '<img src="../img/win' + player + '.png" alt="-">   <img src="../img/lose' + computer + '.png" alt="-">';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }
