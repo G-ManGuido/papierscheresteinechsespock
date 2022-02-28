@@ -100,8 +100,9 @@ img {
 .options {
   display: flex;
   justify-content: space-between;
-  margin: 2% auto 1% auto;
-  width: 80%;
+  padding: 2% 1%;
+  margin: 1% auto 0.5% auto;
+  width: 90%;
   background: #a9a9a9;
 }
 
@@ -130,9 +131,11 @@ img {
   margin-top: 2rem;
   padding: 1rem;
   background: #6dca6d;
+  font-weight: bold;
   outline: none;
-  border: none;
+  border: 1px solid #333;
   border-radius: 10px;
+  box-shadow: 1px 1px 2px #333;
   padding: 1rem 2rem;
   cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

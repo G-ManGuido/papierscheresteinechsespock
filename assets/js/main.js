@@ -1,6 +1,6 @@
-
 let maxRounds = 5;
 const rightBox = document.querySelector('.rightBox');
+const desk = document.querySelector('.desk');
 
 let numberOfRounds = document.querySelectorAll('input[type=radio][name=rounds]');
 numberOfRounds.forEach(radio => radio.addEventListener('change', () => {
@@ -24,7 +24,6 @@ const game = () => {
 
     console.log(maxRounds)
 
-
     const playGame = () => {
         const schereBtn = document.querySelector('.Schere');
         console.log(schereBtn)
@@ -41,7 +40,6 @@ const game = () => {
 
         const movesLeft = document.querySelector('.movesleft');
 
-
         playerOptions.forEach(option => {
 
             option.addEventListener('click', function () {
@@ -51,7 +49,7 @@ const game = () => {
                 console.log(maxRounds)
                 moves++;
                 count -= moves;
-                movesLeft.innerText = `Verbleibende Runden: ${count}`;
+                movesLeft.innerText = `Verbleibende Runden: ${count} von ${maxRounds}`;
 
                 console.log(movesLeft.innerText)
                 console.log(count)
@@ -80,6 +78,7 @@ const game = () => {
         const computerScoreBoard = document.querySelector('.c-count');
 
         console.log(player)
+        console.log('%c Created with Love ', ' color: #f0f');
         if (player === computer) {
             result.innerHTML = '<img src="../img/win' + player + '.png" alt="-">   <img src="../img/win' + computer + '.png" alt="-">';
         }
@@ -157,6 +156,8 @@ const game = () => {
         // chooseMove.style.display = 'none';
 
         movesLeft.style.display = 'none';
+        desk.style.display = 'none';
+
 
 
         if (playerScore > computerScore) {
@@ -173,7 +174,7 @@ const game = () => {
         else {
             result.style.fontSize = '2rem';
             result.innerText = '--Unentschieden--';
-            result.style.color = 'grey'
+            result.style.color = '#fff'
         }
         restartBtn.innerText = 'Restart';
         restartBtn.style.display = 'flex'
@@ -182,9 +183,7 @@ const game = () => {
         })
     }
 
-
     playGame();
 }
-
 
 game();
