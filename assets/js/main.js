@@ -84,7 +84,7 @@ const game = () => {
             result.innerHTML = '<img src="../img/win' + player + '.png" alt="-">   <img src="../img/win' + computer + '.png" alt="-">';
         }
         else if (player == 'Schere') {
-            if (computer == 'Stein') {
+            if (computer == 'Stein' || computer == 'Spock') {
                 result.innerHTML = '<img src="../img/lose' + player + '.png" alt="-">  <img src="../img/win' + computer + '.png" alt="-">';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
@@ -95,7 +95,7 @@ const game = () => {
             }
         }
         else if (player == 'Stein') {
-            if (computer == 'Papier') {
+            if (computer == 'Papier' || computer == 'Spock') {
                 result.innerHTML = '<img src="../img/lose' + player + '.png" alt="-">   <img src="../img/win' + computer + '.png" alt="-">';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
@@ -107,7 +107,7 @@ const game = () => {
             }
         }
         else if (player == 'Papier') {
-            if (computer == 'Schere') {
+            if (computer == 'Schere' || computer == 'Echse') {
                 result.innerHTML = '<img src="../img/lose' + player + '.png" alt="-">  <img src="../img/win' + computer + '.png" alt="-">';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
@@ -118,7 +118,7 @@ const game = () => {
             }
         }
         else if (player == 'Echse') {
-            if (computer == 'Stein') {
+            if (computer == 'Stein' || computer == 'Schere') {
                 result.innerHTML = '<img src="../img/lose' + player + '.png" alt="-">   <img src="../img/win' + computer + '.png" alt="-">';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
@@ -129,7 +129,7 @@ const game = () => {
             }
         }
         else if (player == 'Spock') {
-            if (computer == 'Echse') {
+            if (computer == 'Echse' || computer == 'Papier') {
                 result.innerHTML = '<img src="../img/lose' + player + '.png" alt="-">   <img src="../img/win' + computer + '.png" alt="-">';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
