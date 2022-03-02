@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Colleged";
   src: url(../fonts/Colleged.ttf);
@@ -137,5 +138,105 @@ img {
   border-radius: 10px;
   box-shadow: 1px 1px 2px #333;
   padding: 1rem 2rem;
+  transition: all 0.3s linear;
   cursor: pointer;
+}
+
+.restart:hover {
+  transform: translate(3px, 3px);
+  transition: all 0.3s linear;
+  box-shadow: 0px 0px 6px #222;
+}
+
+.acc {
+  width: 260px;
+  position: absolute;
+  top: 0px;
+  z-index: 4;
+}
+
+.acc .choice {
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+  grid-template-areas: "name action" "panel panel";
+}
+
+.acc label:nth-child(odd) {
+  grid-area: name;
+}
+
+.acc label:nth-child(even) {
+  grid-area: action;
+}
+
+.acc .panel {
+  grid-area: panel;
+}
+
+.acc input[name=ac] {
+  display: none;
+}
+
+.acc .panel {
+  margin: 0;
+  height: 0;
+  overflow: hidden;
+  background-color: rgba(249, 238, 236, 0.8);
+  color: #000;
+  line-height: 1.5;
+  padding: 0 2rem 0 2rem;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.acc .panel p {
+  margin-top: 0;
+}
+
+.acc input.open:checked ~ .panel {
+  height: auto;
+  padding: 2rem;
+  transition: 0.5s;
+}
+
+.acc label {
+  cursor: pointer;
+  background-color: #000;
+  padding: 0 0rem;
+  width: 100%;
+  font-weight: 400;
+  font-size: 1rem;
+  box-sizing: border-box;
+  z-index: 100;
+  color: white;
+}
+
+li {
+  list-style-type: square;
+}
+
+#spre {
+  padding: 0.5rem 0 0.3rem 2rem;
+}
+
+.acc input.open:checked ~ label {
+  background-color: #e6421a;
+  border-radius: 0;
+}
+
+.acc label:nth-child(odd)::after {
+  content: "+";
+  color: white;
+  float: right;
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+.acc input.open:checked ~ label:nth-child(odd)::after {
+  content: "";
+}
+
+.acc input.open:checked ~ label.close::after {
+  content: "–";
+  font-size: 1.5rem;
 }/*# sourceMappingURL=main.css.map */
