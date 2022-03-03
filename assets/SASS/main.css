@@ -103,9 +103,6 @@ img {
 }
 
 .options {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
   padding: 2% 1%;
   margin: 1% auto 0.5% auto;
   width: 90%;
@@ -114,21 +111,17 @@ img {
 }
 
 .Schere, .Stein, .Papier, .Echse, .Spock {
-  position: absolute;
   background: #a9a9a9;
   width: 18%;
   outline: none;
   border: none;
   cursor: pointer;
   padding: 0 1rem;
-  z-index: 10;
 }
 
 .Schere:hover, .Stein:hover, .Papier:hover, .Echse:hover, .Spock:hover {
-  position: absolute;
   width: 19%;
   transition: all 0.3s linear;
-  z-index: 11;
 }
 
 .move {
