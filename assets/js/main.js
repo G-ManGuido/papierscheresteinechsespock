@@ -1,6 +1,9 @@
 let maxRounds = 5;
 const rightBox = document.querySelector('.rightBox');
+const roundBox = document.querySelector('.roundBox');
 const desk = document.querySelector('.desk');
+
+roundBox.style.display = 'none';
 
 let numberOfRounds = document.querySelectorAll('input[type=radio][name=rounds]');
 numberOfRounds.forEach(radio => radio.addEventListener('change', () => {
@@ -49,7 +52,7 @@ const game = () => {
                 console.log(maxRounds)
                 moves++;
                 count -= moves;
-                movesLeft.innerText = `Verbleibende Runden: ${count} von ${maxRounds}`;
+                movesLeft.innerText = `${count} / ${maxRounds}`;
 
                 console.log(movesLeft.innerText)
                 console.log(count)
@@ -80,65 +83,66 @@ const game = () => {
         console.log(player)
         console.log('%c Created with Love ', ' color: #f0f');
         if (player === computer) {
-            result.innerHTML = '<img src="../img/win' + player + '.png" alt="-">   <img src="../img/win' + computer + '.png" alt="-">';
+            result.innerHTML = '<img src="../img/Pwin' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img src="../img/Cwin' + computer + '.png" alt="-">';
         }
         else if (player == 'Schere') {
             if (computer == 'Stein' || computer == 'Spock') {
-                result.innerHTML = '<img src="../img/lose' + player + '.png" alt="-">  <img src="../img/win' + computer + '.png" alt="-">';
+                result.innerHTML = '<img src="../img/Plose' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img src="../img/Cwin' + computer + '.png" alt="-">';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
             } else {
-                result.innerHTML = '<img src="../img/win' + player + '.png" alt="-">  <img src="../img/lose' + computer + '.png" alt="-">';
+                result.innerHTML = '<img src="../img/Pwin' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img src="../img/Close' + computer + '.png" alt="-">';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }
         }
         else if (player == 'Stein') {
             if (computer == 'Papier' || computer == 'Spock') {
-                result.innerHTML = '<img src="../img/lose' + player + '.png" alt="-">   <img src="../img/win' + computer + '.png" alt="-">';
+                result.innerHTML = '<img src="../img/Plose' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img src="../img/Cwin' + computer + '.png" alt="-">';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
 
             } else {
-                result.innerHTML = '<img src="../img/win' + player + '.png" alt="-">  <img src="../img/lose' + computer + '.png" alt="-">';
+                result.innerHTML = '<img src="../img/Pwin' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img src="../img/Close' + computer + '.png" alt="-">';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }
         }
         else if (player == 'Papier') {
             if (computer == 'Schere' || computer == 'Echse') {
-                result.innerHTML = '<img src="../img/lose' + player + '.png" alt="-">  <img src="../img/win' + computer + '.png" alt="-">';
+                result.innerHTML = '<img src="../img/Plose' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img src="../img/Cwin' + computer + '.png" alt="-">';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
             } else {
-                result.innerHTML = '<img src="../img/win' + player + '.png" alt="-">  <img src="../img/lose' + computer + '.png" alt="-">';
+                result.innerHTML = '<img src="../img/Pwin' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img src="../img/Close' + computer + '.png" alt="-">';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }
         }
         else if (player == 'Echse') {
             if (computer == 'Stein' || computer == 'Schere') {
-                result.innerHTML = '<img src="../img/lose' + player + '.png" alt="-">   <img src="../img/win' + computer + '.png" alt="-">';
+                result.innerHTML = '<img src="../img/Plose' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img src="../img/Cwin' + computer + '.png" alt="-">';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
             } else {
-                result.innerHTML = '<img src="../img/win' + player + '.png" alt="-">   <img src="../img/lose' + computer + '.png" alt="-">';
+                result.innerHTML = '<img src="../img/Pwin' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img src="../img/Close' + computer + '.png" alt="-">';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }
         }
         else if (player == 'Spock') {
             if (computer == 'Echse' || computer == 'Papier') {
-                result.innerHTML = '<img src="../img/lose' + player + '.png" alt="-">   <img src="../img/win' + computer + '.png" alt="-">';
+                result.innerHTML = '<img src="../img/Plose' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img src="../img/Cwin' + computer + '.png" alt="-">';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
             } else {
-                result.innerHTML = '<img src="../img/win' + player + '.png" alt="-">   <img src="../img/lose' + computer + '.png" alt="-">';
+                result.innerHTML = '<img src="../img/Pwin' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img src="../img/Close' + computer + '.png" alt="-">';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }
         }
         rightBox.style.display = 'none';
+        roundBox.style.display = 'flex';
     }
 
 
@@ -157,6 +161,7 @@ const game = () => {
 
         movesLeft.style.display = 'none';
         desk.style.display = 'none';
+        roundBox.style.display = 'none';
 
 
 
