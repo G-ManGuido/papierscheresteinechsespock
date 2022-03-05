@@ -18,7 +18,31 @@
         <div class="rightBox">
             <p>Wie viele Runden möchtest Du spielen?</p>
             <div class="cls-round-select">
-                <div>
+                <table>
+                    <tr>
+                        <td> <input type="radio" name="rounds" id="five" value="5" checked>
+                            <label for="five">5</label>
+                        </td>
+                        <td><input type="radio" name="rounds" id="25" value="25">
+                            <label for="25">25</label>
+                        </td>
+                        <td><input type="radio" name="rounds" id="100" value="100" checked>
+                            <label for="100">100</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <input type="radio" name="rounds" id="ten" value="10">
+                            <label for="ten">10</label>
+                        </td>
+                        <td> <input type="radio" name="rounds" id="50" value="50">
+                            <label for="50">50</label>
+                        </td>
+                        <td><input type="radio" name="rounds" id="500" value="500">
+                            <label for="500">500</label>
+                        </td>
+                    </tr>
+                </table>
+                <!-- <div>
                     <input type="radio" name="rounds" id="five" value="5" checked>
                     <label for="five">5</label>
                 </div>
@@ -33,7 +57,7 @@
                 <div>
                     <input type="radio" name="rounds" id="50" value="50">
                     <label for="50">50</label>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -63,7 +87,6 @@
         </div>
 
         <section class="game">
-            <!-- <div class="movesleft"></div> -->
             <div class="score">
                 <div class="playerScore">
                     <p>Spieler</p>
@@ -75,8 +98,9 @@
                 </div>
             </div>
 
-            <div class="result"><img src="../img/startPlayer.png" alt="win"><img src="../img/versus2.png" alt="vs"><img
-                    src="../img/startComputer.png" alt="win">
+            <div class="result">
+                <!-- <img src="../img/startPlayer.png" alt="win"><img src="../img/versus2.png" alt="vs"><img
+                    src="../img/startComputer.png" alt="win"> -->
             </div>
 
             <div class="desk">
@@ -90,7 +114,8 @@
             </div>
 
             <button class="restart"></button>
-
+            <div class="footer-left">&copy; 2022 Created with Love</div>
+            <div class="footer-right">1oo% vegan</div>
         </section>
     </main>
 

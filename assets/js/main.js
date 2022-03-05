@@ -1,4 +1,4 @@
-let maxRounds = 5;
+let maxRounds = 100;
 const rightBox = document.querySelector('.rightBox');
 const roundBox = document.querySelector('.roundBox');
 const desk = document.querySelector('.desk');
@@ -11,11 +11,15 @@ numberOfRounds.forEach(radio => radio.addEventListener('change', () => {
     if (numberOfRounds.item(0).checked == true) {
         maxRounds = 5;
     } else if (numberOfRounds.item(1).checked == true) {
-        maxRounds = 10;
-    } else if (numberOfRounds.item(2).checked == true) {
         maxRounds = 25;
+    } else if (numberOfRounds.item(2).checked == true) {
+        maxRounds = 100;
     } else if (numberOfRounds.item(3).checked == true) {
+        maxRounds = 10;
+    } else if (numberOfRounds.item(4).checked == true) {
         maxRounds = 50;
+    } else if (numberOfRounds.item(5).checked == true) {
+        maxRounds = 500;
     }
 
 }));
@@ -166,20 +170,20 @@ const game = () => {
 
 
         if (playerScore > computerScore) {
-            result.style.fontSize = '2rem';
-            result.style.fontweight = 'bold';
-            result.innerText = 'Glückwunsch! Du hast gewonnen!'
-            result.style.color = '#fff';
+            // result.style.fontSize = '2rem';
+            // result.style.fontweight = 'bold';
+            result.innerText = 'Champion!'
+            result.style.color = '#dedede';
         }
         else if (playerScore < computerScore) {
-            result.style.fontSize = '2rem';
-            result.innerText = 'Du hast leider verloren!';
+            // result.style.fontSize = '2rem';
+            result.innerText = 'Loser!';
             result.style.color = 'red';
         }
         else {
-            result.style.fontSize = '2rem';
-            result.innerText = '--Unentschieden--';
-            result.style.color = '#fff'
+            // result.style.fontSize = '2rem';
+            result.innerText = 'Unentschieden';
+            result.style.color = '#ccc'
         }
         restartBtn.innerText = 'Restart';
         restartBtn.style.display = 'flex'

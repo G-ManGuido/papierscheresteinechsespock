@@ -28,32 +28,56 @@ img{
     width: 100%;
 }
 .startseite{
-    width: 250px;
+    width: 200px;
     font-family: "Colleged";
-    font-size: 2.5rem;
+    font-size: 4em;
     text-align: center;
     h1{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     a{
-      color: #000;
+      color: rgb(255, 255, 255);
+      
+      text-shadow:
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000;
       text-decoration: none;
     }
     a:hover{
-      color:#fff;
+      color:rgb(43, 255, 0);
     }
   }
+  
+.footer-left{
+    position: absolute;
+    bottom:  2px;
+    left: 6px;
+    color: rgb(179, 0, 0);
+}
+.footer-right{
+    position: absolute;
+    bottom:  2px;
+    right: 6px;
+    color: rgb(179, 0, 0);
+}
 .rightBox {
     position: absolute;
-    top:10px;
-    right: 10px;
-    width: 220px;
+    top: 3%;
+    right: 2%;
+    width: 240px;
     color: #000;
+    font-weight: bold;
     padding: 1rem 2rem;
     background-color: rgba(255, 255, 255, 0.25);
     border: 1px solid #333;
     border-radius: 6px;
     box-shadow: 2px 2px 4px #222;
+
+    td{
+        padding-right: 1rem;
+    }
 }
 .roundBox {
     position: absolute;
@@ -63,7 +87,7 @@ img{
     text-align: center;
     justify-content: center;
     justify-items: center;
-    padding: 1rem 2rem;
+    padding: 0.8rem 1rem 0.7rem 1rem;
     background-color: rgba(0, 0, 0, 0.25);
     border: 2px solid #333;
     border-radius: 6px;
@@ -72,7 +96,7 @@ img{
 .movesleft{
     font-family: 'Colleged';
     font-size: 1.5rem;
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.8);
     text-align: center;
 }
 
@@ -87,6 +111,7 @@ img{
     font-size: clamp(1rem, 2.5vw, 1.5rem); 
     border: 8px double;
     border-radius: 8px;
+    box-shadow: 2px 2px 8px #666;
 	z-index: 1;
 }
 
@@ -102,29 +127,37 @@ img{
 	margin-top: 1rem;
 }
 .result{
+    display: flex;
     text-align: center;
-    width: 50%;
-    margin: 10% auto 5% auto;
+    justify-content: center;
+    justify-items: center;
+    font-family: 'Colleged';
+    font-size:  6.5rem; 
+    width: 30%;
+    margin: 10% auto 20% auto;
     img{
-        width: 30%;
+       width: 50%;
+        
         padding: 0 2%;
     }
     img:nth-of-type(2){
         width: 20%;
-        padding: 0 1%;
+        padding: 0 1% 1rem 1%;
     }
 }
 
 .desk {
-    width: 60%;
+    position: absolute;
+    bottom: 3rem;
+    width: 70%;
     border: 1px solid #666;
     border-radius: 8px;
     box-shadow: 2px 2px 4px #333;
     background: #a9a9a9;
 }
 .options{
-    padding: 2% 1%;
-	margin: 1% auto 0.5% auto;
+    padding: 2% 1% 2% 3%;
+	margin: 1% auto 1% auto;
     width: 90%;
     background: #a9a9a9;
 }
@@ -162,7 +195,6 @@ img{
     background: #f00;
 }
 
-
 .restart {
 	display: none;
 	margin-top: 2rem;
@@ -183,8 +215,6 @@ img{
     box-shadow: 0px 0px 6px #222;
     background: rgb(98, 185, 98);
 }
-
-
 
 .acc {
     width: 260px;
