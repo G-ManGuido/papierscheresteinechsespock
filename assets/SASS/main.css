@@ -153,7 +153,7 @@ img {
 }
 
 .options {
-  padding: 2% 1% 2% 3%;
+  padding: 0% 1% 0% 3%;
   margin: 1% auto 1% auto;
   width: 90%;
   background: #a9a9a9;
@@ -306,6 +306,9 @@ li {
   bottom: 2px;
   left: 6px;
   color: #b30000;
+}
+.footer-left img {
+  width: 10%;
 }
 
 .footer-right {

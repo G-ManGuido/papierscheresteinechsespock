@@ -13,17 +13,6 @@
 	align-items: center;
 }
 
-// header {
-//     top:0px;
-// 	text-align: center;
-// 	font-size: 4rem;
-// 	z-index: 2;
-
-//     img{
-//         width: 100%;
-//     }
-// }
-
 img{
     width: 100%;
 }
@@ -156,7 +145,7 @@ img{
     background: #a9a9a9;
 }
 .options{
-    padding: 2% 1% 2% 3%;
+    padding: 0% 1% 0% 3%;
 	margin: 1% auto 1% auto;
     width: 90%;
     background: #a9a9a9;
@@ -319,6 +308,10 @@ li {
     bottom:  2px;
     left: 6px;
     color: rgb(179, 0, 0);
+
+    img{
+        width: 10%;
+    }
 }
 .footer-right{
     position: absolute;
