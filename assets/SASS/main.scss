@@ -28,40 +28,41 @@ img{
     width: 100%;
 }
 .startseite{
-    width: 200px;
+    width: 250px;
     font-family: "Colleged";
-    font-size: 4em;
+    font-size: 4rem;
     text-align: center;
     h1{
         font-size: 2rem;
+
+        span{
+            font-size: 3rem;
+        }
+   
+        a{
+            color: rgb(255, 255, 255);
+            text-shadow:
+            -1px -1px 0 #000,  
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+            text-decoration: none;
+            transition: all .5s linear;
+        }
+        a:hover{
+            color:rgba(0, 0, 0, 0.5);
+            font-size: 3rem;
+            transition: all .5s linear;
+            text-shadow: 0px 0px 6px #fff;
+            span{
+                font-size: 4rem;
+                
+            }
+        }
     }
-    a{
-      color: rgb(255, 255, 255);
-      
-      text-shadow:
-      -1px -1px 0 #000,  
-       1px -1px 0 #000,
-       -1px 1px 0 #000,
-        1px 1px 0 #000;
-      text-decoration: none;
-    }
-    a:hover{
-      color:rgb(43, 255, 0);
-    }
-  }
+}
   
-.footer-left{
-    position: absolute;
-    bottom:  2px;
-    left: 6px;
-    color: rgb(179, 0, 0);
-}
-.footer-right{
-    position: absolute;
-    bottom:  2px;
-    right: 6px;
-    color: rgb(179, 0, 0);
-}
+
 .rightBox {
     position: absolute;
     top: 3%;
@@ -137,7 +138,6 @@ img{
     margin: 10% auto 20% auto;
     img{
        width: 50%;
-        
         padding: 0 2%;
     }
     img:nth-of-type(2){
@@ -148,7 +148,7 @@ img{
 
 .desk {
     position: absolute;
-    bottom: 3rem;
+    bottom: 2.5rem;
     width: 70%;
     border: 1px solid #666;
     border-radius: 8px;
@@ -301,8 +301,8 @@ li {
     content: "+";
     color: white;
     float: right;
-    font-size: 1rem;
-    margin-top: 0;
+    font-size: 1.4rem;
+    margin-top: -4px;
 }
 
 .acc input.open:checked~label:nth-child(odd)::after {
@@ -312,4 +312,17 @@ li {
 .acc input.open:checked~label.close::after {
     content: "–";
     font-size: 1.5rem;
+}
+
+.footer-left{
+    position: absolute;
+    bottom:  2px;
+    left: 6px;
+    color: rgb(179, 0, 0);
+}
+.footer-right{
+    position: absolute;
+    bottom:  2px;
+    right: 6px;
+    color: rgb(179, 0, 0);
 }
