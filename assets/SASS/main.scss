@@ -125,14 +125,45 @@ img{
     font-size:  6.5rem; 
     width: 30%;
     margin: 10% auto 20% auto;
-    img{
-       width: 50%;
+
+
+    .human{ 
+        width: 50%;
         padding: 0 2%;
+
+            animation-name: leftCenter;
+            animation-duration: 0.6s;
     }
+    .cpu{
+            width: 50%;
+            padding: 0 2%;
+            animation-name: rightCenter;
+            animation-duration: 0.6s;
+
+    }
+
     img:nth-of-type(2){
         width: 20%;
         padding: 0 1% 1rem 1%;
+        animation-name: centerCenter;
+        animation-duration: 0.5s;
     }
+    @keyframes leftCenter {
+        0%{ transform: translate(-600px, 500px) rotate(-90deg) scale(0) }
+        100%{ transform: translate(0px, 0px) rotate(0deg)  scale(1) }
+    }
+
+    @keyframes rightCenter {
+        0%{ transform: translate(600px, -500px) rotate(-90deg) scale(0) }
+        100%{ transform: translate(0px, 0px) rotate(0deg)  scale(1) }
+    }
+
+    @keyframes centerCenter {
+        0%{ transform: translate(0px, 0px) rotate(0deg) scale(0) }
+        100%{ transform: translate(0px, 0px) rotate(360deg)  scale(1) }
+    }
+
+
 }
 
 .desk {

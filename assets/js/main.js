@@ -87,60 +87,60 @@ const game = () => {
         console.log(player)
         console.log('%c Created with Love ', ' color: #f0f');
         if (player === computer) {
-            result.innerHTML = '<img src="../img/Pwin' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img src="../img/Cwin' + computer + '.png" alt="-">';
+            result.innerHTML = '<img class="human" src="../img/Pwin' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img class="cpu" src="../img/Cwin' + computer + '.png" alt="-">';
         }
         else if (player == 'Schere') {
             if (computer == 'Stein' || computer == 'Spock') {
-                result.innerHTML = '<img src="../img/Plose' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img src="../img/Cwin' + computer + '.png" alt="-">';
+                result.innerHTML = '<img class="human" src="../img/Plose' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img class="cpu" src="../img/Cwin' + computer + '.png" alt="-">';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
             } else {
-                result.innerHTML = '<img src="../img/Pwin' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img src="../img/Close' + computer + '.png" alt="-">';
+                result.innerHTML = '<img class="human" src="../img/Pwin' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img class="cpu" src="../img/Close' + computer + '.png" alt="-">';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }
         }
         else if (player == 'Stein') {
             if (computer == 'Papier' || computer == 'Spock') {
-                result.innerHTML = '<img src="../img/Plose' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img src="../img/Cwin' + computer + '.png" alt="-">';
+                result.innerHTML = '<img class="human" src="../img/Plose' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img  class="cpu" src="../img/Cwin' + computer + '.png" alt="-">';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
 
             } else {
-                result.innerHTML = '<img src="../img/Pwin' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img src="../img/Close' + computer + '.png" alt="-">';
+                result.innerHTML = '<img class="human" src="../img/Pwin' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img class="cpu" src="../img/Close' + computer + '.png" alt="-">';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }
         }
         else if (player == 'Papier') {
             if (computer == 'Schere' || computer == 'Echse') {
-                result.innerHTML = '<img src="../img/Plose' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img src="../img/Cwin' + computer + '.png" alt="-">';
+                result.innerHTML = '<img class="human" src="../img/Plose' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img class="cpu" src="../img/Cwin' + computer + '.png" alt="-">';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
             } else {
-                result.innerHTML = '<img src="../img/Pwin' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img src="../img/Close' + computer + '.png" alt="-">';
+                result.innerHTML = '<img class="human" src="../img/Pwin' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img class="cpu" src="../img/Close' + computer + '.png" alt="-">';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }
         }
         else if (player == 'Echse') {
             if (computer == 'Stein' || computer == 'Schere') {
-                result.innerHTML = '<img src="../img/Plose' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img src="../img/Cwin' + computer + '.png" alt="-">';
+                result.innerHTML = '<img class="human" src="../img/Plose' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img class="cpu" src="../img/Cwin' + computer + '.png" alt="-">';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
             } else {
-                result.innerHTML = '<img src="../img/Pwin' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img src="../img/Close' + computer + '.png" alt="-">';
+                result.innerHTML = '<img class="human" src="../img/Pwin' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img class="cpu" src="../img/Close' + computer + '.png" alt="-">';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }
         }
         else if (player == 'Spock') {
             if (computer == 'Echse' || computer == 'Papier') {
-                result.innerHTML = '<img src="../img/Plose' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img src="../img/Cwin' + computer + '.png" alt="-">';
+                result.innerHTML = '<img class="human" src="../img/Plose' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img class="cpu" src="../img/Cwin' + computer + '.png" alt="-">';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
             } else {
-                result.innerHTML = '<img src="../img/Pwin' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img src="../img/Close' + computer + '.png" alt="-">';
+                result.innerHTML = '<img class="human" src="../img/Pwin' + player + '.png" alt="-"><img src="../img/versus2.png" alt="vs"><img class="cpu" src="../img/Close' + computer + '.png" alt="-">';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }

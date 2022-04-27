@@ -16,6 +16,10 @@ body {
   background: url(../img/startPic.png) no-repeat center/cover;
 }
 
+main {
+  overflow: hidden;
+}
+
 .game {
   display: flex;
   flex-direction: column;
@@ -42,7 +46,7 @@ img {
   font-size: 3rem;
 }
 .startseite h1 a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   text-decoration: none;
   transition: all 0.5s linear;
@@ -133,13 +137,77 @@ img {
   width: 30%;
   margin: 10% auto 20% auto;
 }
-.result img {
+.result .human {
   width: 50%;
   padding: 0 2%;
+  -webkit-animation-name: leftCenter;
+          animation-name: leftCenter;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+.result .cpu {
+  width: 50%;
+  padding: 0 2%;
+  -webkit-animation-name: rightCenter;
+          animation-name: rightCenter;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 .result img:nth-of-type(2) {
   width: 20%;
   padding: 0 1% 1rem 1%;
+  -webkit-animation-name: centerCenter;
+          animation-name: centerCenter;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+@-webkit-keyframes leftCenter {
+  0% {
+    transform: translate(-600px, 500px) rotate(-90deg) scale(0);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1);
+  }
+}
+@keyframes leftCenter {
+  0% {
+    transform: translate(-600px, 500px) rotate(-90deg) scale(0);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1);
+  }
+}
+@-webkit-keyframes rightCenter {
+  0% {
+    transform: translate(600px, -500px) rotate(-90deg) scale(0);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1);
+  }
+}
+@keyframes rightCenter {
+  0% {
+    transform: translate(600px, -500px) rotate(-90deg) scale(0);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1);
+  }
+}
+@-webkit-keyframes centerCenter {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg) scale(0);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(360deg) scale(1);
+  }
+}
+@keyframes centerCenter {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg) scale(0);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(360deg) scale(1);
+  }
 }
 
 .desk {
@@ -190,7 +258,7 @@ img {
   display: none;
   margin-top: 2rem;
   padding: 1rem;
-  background: #6dca6d;
+  background: rgb(109, 202, 109);
   font-weight: bold;
   outline: none;
   border: 1px solid #333;
@@ -205,7 +273,7 @@ img {
   transform: translate(3px, 3px);
   transition: all 0.3s linear;
   box-shadow: 0px 0px 6px #222;
-  background: #62b962;
+  background: rgb(98, 185, 98);
 }
 
 .acc {
@@ -280,7 +348,7 @@ li {
 }
 
 .acc input.open:checked ~ label {
-  background-color: #e6421a;
+  background-color: hsl(12deg, 80%, 50%);
   border-radius: 0;
 }
 
@@ -305,7 +373,7 @@ li {
   position: absolute;
   bottom: 2px;
   left: 6px;
-  color: #b30000;
+  color: rgb(179, 0, 0);
 }
 .footer-left img {
   width: 10%;
@@ -315,5 +383,5 @@ li {
   position: absolute;
   bottom: 2px;
   right: 6px;
-  color: #b30000;
+  color: rgb(179, 0, 0);
 }/*# sourceMappingURL=main.css.map */
