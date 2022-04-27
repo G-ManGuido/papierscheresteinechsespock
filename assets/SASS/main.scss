@@ -27,7 +27,7 @@ img{
         span{
             font-size: 3rem;
         }
-   
+
         a{
             color: rgb(255, 255, 255);
             text-shadow:
@@ -50,7 +50,7 @@ img{
         }
     }
 }
-  
+
 
 .rightBox {
     position: absolute;
@@ -163,7 +163,6 @@ img{
         100%{ transform: translate(0px, 0px) rotate(360deg)  scale(1) }
     }
 
-
 }
 
 .desk {
@@ -182,7 +181,6 @@ img{
     background: #a9a9a9;
 }
 
-
 .Schere, .Stein, .Papier, .Echse, .Spock{
     position: relative;
     background: #a9a9a9;
@@ -193,6 +191,7 @@ img{
     margin: 2% 1% 0 1%;
     padding: 0 1rem;
     transition: all .5s linear;
+    opacity: 1;
 }
 
 .Schere:hover, .Stein:hover, .Papier:hover, .Echse:hover, .Spock:hover{
@@ -201,11 +200,6 @@ img{
     transition: all .3s linear;
     z-index: 15;
 }
-// .Schere:hover, .Stein:hover, .Papier:hover, .Echse:hover, .Spock:hover{
-//     width: 19%;
-//     transition: all .3s linear;
-//     z-index: 15;
-// }
 
 .move{
     margin: 2% 0;
@@ -240,10 +234,6 @@ img{
     width: 260px;
     position: absolute;
     top: 0px;
-    // left: 0; 
-    // right: 0; 
-    // margin-left: auto; 
-    // margin-right: auto; 
     z-index: 4;
 }
 
@@ -295,13 +285,11 @@ img{
 .acc label {
     cursor: pointer;
     background-color: #000;
-    // border-bottom: 2px solid #fff;
     padding: 0 0rem;
     width: 100%;
     font-weight: 400;
     font-size: 1rem;
     box-sizing: border-box;
-    // border-radius: 0 0 8px 8px;
     z-index: 100;
     color: white;
 }
@@ -309,7 +297,7 @@ li {
     list-style-type: square;
 }
 #spre{
- padding: 0.5rem 0 0.3rem 2rem;
+    padding: 0.5rem 0 0.3rem 2rem;
 }
 
 .acc input.open:checked~label {

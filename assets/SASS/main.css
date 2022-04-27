@@ -20,6 +20,10 @@ main {
   overflow: hidden;
 }
 
+button {
+  background: none;
+}
+
 .game {
   display: flex;
   flex-direction: column;
@@ -237,6 +241,7 @@ img {
   margin: 2% 1% 0 1%;
   padding: 0 1rem;
   transition: all 0.5s linear;
+  opacity: 1;
 }
 
 .Schere:hover, .Stein:hover, .Papier:hover, .Echse:hover, .Spock:hover {
